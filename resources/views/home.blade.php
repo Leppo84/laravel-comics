@@ -2,4 +2,4 @@
 
 @section('pageTitle','DC Comic')
 
-@endsection
+
