@@ -1,5 +1,130 @@
-html {
+* {
   margin: 0;
-  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.white {
+  background-color: white;
+}
+
+.txt-white {
+  color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+.txt-black {
+  color: black;
+}
+
+.dc-blue {
+  background-color: #0282f9;
+}
+
+.dc-txt-blue {
+  color: #0282f9;
+}
+
+.dc-darkgrey {
+  background-color: #303030;
+}
+
+.dc-txt-darkgrey {
+  color: #303030;
+}
+
+.dc-mediumgrey {
+  background-color: #797979;
+}
+
+.dc-txt-mediumgrey {
+  color: #797979;
+}
+
+.bg {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fx {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.col50 {
+  width: 50%;
+}
+
+.col-sixth {
+  width: 16.6666666667%;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.ji-center {
+  justify-items: center;
+}
+
+header.bg #logo-dc {
+  width: 100px;
+  padding: 5px;
+}
+
+header.bg nav {
+  text-align: end;
+  position: relative;
+  top: 4px;
+}
+
+header.bg nav ul {
+  list-style-type: none;
+}
+
+header.bg nav ul li {
+  display: inline-block;
+  padding: 45px 10px;
+}
+
+header.bg nav ul li.active {
+  border-bottom: 4px solid #0282f9;
+}
+
+header.bg nav ul li.active a {
+  color: #0282f9;
+}
+
+header.bg nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+header.bg nav ul li a:hover {
+  color: #0282f9;
 }
 
