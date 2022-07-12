@@ -89,42 +89,102 @@
   justify-items: center;
 }
 
-header.bg #logo-dc {
+#logo-dc {
   width: 100px;
   padding: 5px;
 }
 
-header.bg nav {
+nav {
   text-align: end;
   position: relative;
   top: 4px;
 }
 
-header.bg nav ul {
+nav ul {
   list-style-type: none;
 }
 
-header.bg nav ul li {
+nav ul li {
   display: inline-block;
   padding: 45px 10px;
 }
 
-header.bg nav ul li.active {
+nav ul li.active {
   border-bottom: 4px solid #0282f9;
 }
 
-header.bg nav ul li.active a {
+nav ul li.active a {
   color: #0282f9;
 }
 
-header.bg nav ul li a {
+nav ul li a {
   text-decoration: none;
   color: black;
   font-size: smaller;
   font-weight: bold;
 }
 
-header.bg nav ul li a:hover {
+nav ul li a:hover {
   color: #0282f9;
+}
+
+.jumbotron img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+  position: relative;
+  top: 4px;
+}
+
+section.bg .btn {
+  padding: 20px;
+  text-align: start;
+  position: relative;
+  bottom: 20px;
+  z-index: 30;
+}
+
+section.bg .btn div h3 {
+  text-align: start;
+}
+
+section.bg .comic-card {
+  padding: 10px;
+}
+
+section.bg .comic-card .card-img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+  margin: 5px;
+}
+
+.obj {
+  width: 20%;
+  padding: 40px 0;
+}
+
+section.bg {
+  background: url("/img/dc-logo-bg.png") right no-repeat, url("/img/footer-bg.jpg");
+}
+
+footer {
+  padding: 30px 0;
+}
+
+.btn {
+  padding: 10px;
+  border: 2px solid #0282f9;
+}
+
+.icon {
+  padding: 10px;
+  color: #797979;
 }
 
