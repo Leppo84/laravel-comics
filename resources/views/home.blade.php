@@ -9,13 +9,21 @@
           <button class="btn dc-blue txt-white">
             <h3>CURRENT SERIES</h3>
           </button>
-          <div class="fx wrap">
-            <div class="col-sixth comic-card">
-              <img src="card.thumb" alt="card.series" class="card-img">
+        {{--<div class="fx wrap">
+            <div v-for="(card, index) in AllComics" :key="index" class="col-sixth comic-card">
+              <img :src="card.thumb" :alt="card.series" class="card-img">
               <span class="txt-white">
-                card.series
+                {{card.series}}
+              </span>
+            </div> --}}
+          <div class="fx wrap">
+            @foreach (config('comics') as $comic)
+            <div class="col-sixth comic-card">
+              <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}" class="card-img">
+              <span class="txt-white">
               </span>
             </div>
+            @endforeach
           </div>
         </div>
       </section>
