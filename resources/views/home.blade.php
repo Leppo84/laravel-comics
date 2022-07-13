@@ -2,7 +2,7 @@
 
 @section('pageTitle','DC Comic')
 
-@include('pageMain')
+@section('pageMain')
 <main>
     <section class="bg dc-darkergrey">
         <div class="container">

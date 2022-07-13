@@ -14,11 +14,7 @@
 
         @include('partials/header')
 
-
-
         @yield('pageMain')
-
-
 
         @include('partials/footer')
 
