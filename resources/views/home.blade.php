@@ -9,17 +9,15 @@
           <button class="btn dc-blue txt-white">
             <h3>CURRENT SERIES</h3>
           </button>
-        {{--<div class="fx wrap">
-            <div v-for="(card, index) in AllComics" :key="index" class="col-sixth comic-card">
-              <img :src="card.thumb" :alt="card.series" class="card-img">
-              <span class="txt-white">
-                {{card.series}}
-              </span>
-            </div> --}}
           <div class="fx wrap">
             @foreach (config('comics') as $comic)
             <div class="col-sixth comic-card">
-              <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}" class="card-img">
+              <a href="{{ route('comic', ['id' => $comic['id']]) }}">
+               {{-- @foreach ($paste as $pasta)
+                <li><a href="{{ route('prodotto', ['id' => $pasta['id']]) }}">{{ $pasta['titolo'] }}</a></li>
+            @endforeach--}}
+                <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}" class="card-img">
+              </a>
               <span class="txt-white">
               </span>
             </div>

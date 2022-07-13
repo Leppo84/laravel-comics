@@ -26,7 +26,9 @@ Route::get('/character', function () {
 })->name('character');
 
 Route::get('/comics', function () {
+    $arrComics = config('comics');
     return view('comics', [
+        'arrComics' => $arrComics,
     ]);
 })->name('comics');
 
@@ -69,4 +71,43 @@ Route::get('/shop', function () {
     return view('shop', [
     ]);
 })->name('shop');
+
+Route::get('/comic/{id}', function ($id) {
+    $comics = null;
+    foreach (config('comics') as $value) {
+        if ($value['id'] == $id) {
+            $comics = $value;
+            break;
+        }
+    }
+    if ($comics) {
+        return view ('comic', [
+            'comics' => $comics,
+        ]);
+    } else {
+        abort(404);
+    }
+})->name('comic');
+
+/*
+
+Route::get('/prodotti/{id}', function ($id) {
+    $pasta = null;
+    foreach (config('pasta') as $value) {
+        if ($value['id'] == $id) {
+            $pasta = $value;
+            break;
+        }
+    }
+    if ($pasta) {
+        return view ('prodotto', [
+            'pageTitle' => 'Prodotto - La Molisana',
+            'pasta'     => $pasta,
+        ]);
+    } else {
+        abort(404);
+    }
+})->name('prodotto');
+
+*/
 
