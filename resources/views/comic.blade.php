@@ -11,10 +11,10 @@
                   <img src="{{$comics['thumb']}}" alt="{{$comics['series']}}" class="card-img">
             </button>
             <div class="fx wrap">
-                <div class="col-sixth comic-card">
-                    <h3>{{ $comics['title'] }}</h3>
+                <div class="comic-card">
+                    <h3 class="txt-white">{{ $comics['title'] }}</h3>
                   <span class="txt-white">
-                    Description here
+                    {{ $comics['description'] }}
                   </span>
                 </div>
               </div>
