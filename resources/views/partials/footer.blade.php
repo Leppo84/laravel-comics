@@ -1,4 +1,4 @@
-<section class="bg">
+<section class="bg-alt">
     <div class="container fx">
       <div class="col50 fx ji-between">
         <ul>

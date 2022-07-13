@@ -1,4 +1,4 @@
-<section class="bg black">
+<section class="bg dc-darkergrey">
     <div class="container">
       <button class="btn dc-blue txt-white">
         <h3>CURRENT SERIES</h3>

@@ -14,11 +14,11 @@
 
         @include('partials/header')
 
-        @include('partials/contents')
+
 
         @yield('pageMain')
 
-        @include('partials/purchases')
+
 
         @include('partials/footer')
 

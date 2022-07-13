@@ -36,6 +36,10 @@
   background-color: #303030;
 }
 
+.dc-darkergrey {
+  background-color: #1c1c1c;
+}
+
 .dc-txt-darkgrey {
   color: #303030;
 }
@@ -170,7 +174,7 @@ section.bg .comic-card .card-img {
   padding: 40px 0;
 }
 
-section.bg {
+section.bg-alt {
   background: url("/img/dc-logo-bg.png") right no-repeat, url("/img/footer-bg.jpg");
 }
 
